@@ -1,0 +1,457 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2757
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+https://data.stackexchange.com/stackoverflow/query/edit/1825672#resultSets \
+\
+SELECT p.Body\
+FROM Posts p\
+WHERE (\
+   LOWER(p.Body) LIKE '%sql injection%'\
+   OR LOWER(p.Body) LIKE '%user input%'\
+   OR LOWER(p.Body) LIKE '%$_post%'\
+   OR LOWER(p.Body) LIKE '%mysql_query%'\
+   OR LOWER(p.Body) LIKE '%insert into%'\
+   OR LOWER(p.Body) LIKE '%$unsafe_variable%'\
+   OR LOWER(p.Body) LIKE '%drop table%'\
+   OR LOWER(p.Body) LIKE '%prevention%'\
+   OR LOWER(p.Body) LIKE '%input validation%'\
+   OR LOWER(p.Body) LIKE '%prepared statements%'\
+   OR LOWER(p.Body) LIKE '%injection attack%'\
+   OR LOWER(p.Body) LIKE '%buffer overflow%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%command injection%'\
+   OR LOWER(p.Body) LIKE '%path traversal%'\
+   OR LOWER(p.Body) LIKE '%remote code execution%'\
+   OR LOWER(p.Body) LIKE '%cross site scripting%'\
+   OR LOWER(p.Body) LIKE '%xss attack%'\
+   OR LOWER(p.Body) LIKE '%persistent xss%'\
+   OR LOWER(p.Body) LIKE '%reflected xss%'\
+   OR LOWER(p.Body) LIKE '%stored xss%'\
+   OR LOWER(p.Body) LIKE '%xss payload%'\
+   OR LOWER(p.Body) LIKE '%cross-origin resource sharing%'\
+   OR LOWER(p.Body) LIKE '%csrf%'\
+   OR LOWER(p.Body) LIKE '%cross-site request forgery%'\
+   OR LOWER(p.Body) LIKE '%clickjacking%'\
+   OR LOWER(p.Body) LIKE '%frame injection%'\
+   OR LOWER(p.Body) LIKE '%script injection%'\
+   OR LOWER(p.Body) LIKE '%html injection%'\
+   OR LOWER(p.Body) LIKE '%xml injection%'\
+   OR LOWER(p.Body) LIKE '%ldap injection%'\
+   OR LOWER(p.Body) LIKE '%xpath injection%'\
+   OR LOWER(p.Body) LIKE '%ssi injection%'\
+   OR LOWER(p.Body) LIKE '%ssi attack%'\
+   OR LOWER(p.Body) LIKE '%xml external entity%'\
+   OR LOWER(p.Body) LIKE '%xxe%'\
+   OR LOWER(p.Body) LIKE '%server-side request forgery%'\
+   OR LOWER(p.Body) LIKE '%ssrf%'\
+   OR LOWER(p.Body) LIKE '%file inclusion%'\
+   OR LOWER(p.Body) LIKE '%remote file inclusion%'\
+   OR LOWER(p.Body) LIKE '%local file inclusion%'\
+   OR LOWER(p.Body) LIKE '%rfi%'\
+   OR LOWER(p.Body) LIKE '%lfi%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%rce%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%arbitrary code execution%'\
+   OR LOWER(p.Body) LIKE '%os command%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%os command%'\
+   OR LOWER(p.Body) LIKE '%shell injection%'\
+   OR LOWER(p.Body) LIKE '%dll injection%'\
+   OR LOWER(p.Body) LIKE '%heap overflow%'\
+   OR LOWER(p.Body) LIKE '%stack overflow%'\
+   OR LOWER(p.Body) LIKE '%integer overflow%'\
+   OR LOWER(p.Body) LIKE '%format string vulnerability%'\
+   OR LOWER(p.Body) LIKE '%race condition%'\
+   OR LOWER(p.Body) LIKE '%time of check to time of use%'\
+   OR LOWER(p.Body) LIKE '%toctou%'\
+   OR LOWER(p.Body) LIKE '%access control bypass%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%horizontal privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%vertical privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%path manipulation%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%command execution%'\
+   OR LOWER(p.Body) LIKE '%shell command injection%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%xpath injection%'\
+   OR LOWER(p.Body) LIKE '%xml injection%'\
+   OR LOWER(p.Body) LIKE '%sql injection%'\
+   OR LOWER(p.Body) LIKE '%sqli%'\
+   OR LOWER(p.Body) LIKE '%xml external entity%'\
+   OR LOWER(p.Body) LIKE '%xxe%'\
+   OR LOWER(p.Body) LIKE '%ldap injection%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file access%'\
+   OR LOWER(p.Body) LIKE '%file upload vulnerability%'\
+   OR LOWER(p.Body) LIKE '%insecure deserialization%'\
+   OR LOWER(p.Body) LIKE '%xml deserialization%'\
+   OR LOWER(p.Body) LIKE '%json deserialization%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%buffer overflow%'\
+   OR LOWER(p.Body) LIKE '%format string vulnerability%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file write%'\
+   OR LOWER(p.Body) LIKE '%arbitrary code execution%'\
+   OR LOWER(p.Body) LIKE '%race condition%'\
+   OR LOWER(p.Body) LIKE '%time of check to time of use%'\
+   OR LOWER(p.Body) LIKE '%toctou%'\
+   OR LOWER(p.Body) LIKE '%access control bypass%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%horizontal privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%vertical privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%path manipulation%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%command execution%'\
+   OR LOWER(p.Body) LIKE '%shell command injection%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%xpath injection%'\
+   OR LOWER(p.Body) LIKE '%xml injection%'\
+   OR LOWER(p.Body) LIKE '%sql injection%'\
+   OR LOWER(p.Body) LIKE '%sqli%'\
+   OR LOWER(p.Body) LIKE '%xml external entity%'\
+   OR LOWER(p.Body) LIKE '%xxe%'\
+   OR LOWER(p.Body) LIKE '%ldap injection%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file access%'\
+   OR LOWER(p.Body) LIKE '%file upload vulnerability%'\
+   OR LOWER(p.Body) LIKE '%insecure deserialization%'\
+   OR LOWER(p.Body) LIKE '%xml deserialization%'\
+   OR LOWER(p.Body) LIKE '%json deserialization%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%buffer overflow%'\
+   OR LOWER(p.Body) LIKE '%format string vulnerability%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file write%'\
+   OR LOWER(p.Body) LIKE '%arbitrary code execution%'\
+   OR LOWER(p.Body) LIKE '%race condition%'\
+   OR LOWER(p.Body) LIKE '%time of check to time of use%'\
+   OR LOWER(p.Body) LIKE '%toctou%'\
+   OR LOWER(p.Body) LIKE '%access control bypass%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%horizontal privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%vertical privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%path manipulation%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%command execution%'\
+   OR LOWER(p.Body) LIKE '%shell command injection%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%xpath injection%'\
+   OR LOWER(p.Body) LIKE '%xml injection%'\
+   OR LOWER(p.Body) LIKE '%sql injection%'\
+   OR LOWER(p.Body) LIKE '%sqli%'\
+   OR LOWER(p.Body) LIKE '%xml external entity%'\
+   OR LOWER(p.Body) LIKE '%xxe%'\
+   OR LOWER(p.Body) LIKE '%ldap injection%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file access%'\
+   OR LOWER(p.Body) LIKE '%file upload vulnerability%'\
+   OR LOWER(p.Body) LIKE '%insecure deserialization%'\
+   OR LOWER(p.Body) LIKE '%xml deserialization%'\
+   OR LOWER(p.Body) LIKE '%json deserialization%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%buffer overflow%'\
+   OR LOWER(p.Body) LIKE '%format string vulnerability%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file write%'\
+   OR LOWER(p.Body) LIKE '%arbitrary code execution%'\
+   OR LOWER(p.Body) LIKE '%race condition%'\
+   OR LOWER(p.Body) LIKE '%time of check to time of use%'\
+   OR LOWER(p.Body) LIKE '%toctou%'\
+   OR LOWER(p.Body) LIKE '%access control bypass%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%horizontal privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%vertical privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%path manipulation%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%command execution%'\
+   OR LOWER(p.Body) LIKE '%shell command injection%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%xpath injection%'\
+   OR LOWER(p.Body) LIKE '%xml injection%'\
+   OR LOWER(p.Body) LIKE '%sql injection%'\
+   OR LOWER(p.Body) LIKE '%sqli%'\
+   OR LOWER(p.Body) LIKE '%xml external entity%'\
+   OR LOWER(p.Body) LIKE '%xxe%'\
+   OR LOWER(p.Body) LIKE '%ldap injection%'\
+   OR LOWER(p.Body) LIKE '%directory traversal%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file access%'\
+   OR LOWER(p.Body) LIKE '%file upload vulnerability%'\
+   OR LOWER(p.Body) LIKE '%insecure deserialization%'\
+   OR LOWER(p.Body) LIKE '%xml deserialization%'\
+   OR LOWER(p.Body) LIKE '%json deserialization%'\
+   OR LOWER(p.Body) LIKE '%os command injection%'\
+   OR LOWER(p.Body) LIKE '%code injection%'\
+   OR LOWER(p.Body) LIKE '%code execution%'\
+   OR LOWER(p.Body) LIKE '%buffer overflow%'\
+   OR LOWER(p.Body) LIKE '%format string vulnerability%'\
+   OR LOWER(p.Body) LIKE '%arbitrary file write%'\
+   OR LOWER(p.Body) LIKE '%arbitrary code execution%'\
+   OR LOWER(p.Body) LIKE '%race condition%'\
+   OR LOWER(p.Body) LIKE '%time of check to time of use%'\
+   OR LOWER(p.Body) LIKE '%toctou%'\
+   OR LOWER(p.Body) LIKE '%access control bypass%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%horizontal privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%vertical privilege escalation%'\
+   OR LOWER(p.Body) LIKE '%cybersecurity%'\
+   OR LOWER(p.Body) LIKE '%information-security%'\
+   OR LOWER(p.Body) LIKE '%network-security%'\
+   OR LOWER(p.Body) LIKE '%application-security%'\
+   OR LOWER(p.Body) LIKE '%web-security%'\
+   OR LOWER(p.Body) LIKE '%data-security%'\
+   OR LOWER(p.Body) LIKE '%privacy%'\
+   OR LOWER(p.Body) LIKE '%encryption%'\
+   OR LOWER(p.Body) LIKE '%authentication%'\
+   OR LOWER(p.Body) LIKE '%authorization%'\
+   OR LOWER(p.Body) LIKE '%vulnerability%'\
+   OR LOWER(p.Body) LIKE '%malware%'\
+   OR LOWER(p.Body) LIKE '%phishing%'\
+   OR LOWER(p.Body) LIKE '%firewall%'\
+   OR LOWER(p.Body) LIKE '%intrusion-detection%'\
+   OR LOWER(p.Body) LIKE '%pentesting%'\
+   OR LOWER(p.Body) LIKE '%ethical-hacking%'\
+   OR LOWER(p.Body) LIKE '%cybercrime%'\
+   OR LOWER(p.Body) LIKE '%digital-forensics%'\
+   OR LOWER(p.Body) LIKE '%risk-management%'\
+   OR LOWER(p.Body) LIKE '%compliance%'\
+   OR LOWER(p.Body) LIKE '%regulation%'\
+   OR LOWER(p.Body) LIKE '%incident-response%'\
+   OR LOWER(p.Body) LIKE '%security-audit%'\
+   OR LOWER(p.Body) LIKE '%security-awareness%'\
+   OR LOWER(p.Body) LIKE '%security-policy%'\
+   OR LOWER(p.Body) LIKE '%security-architecture%'\
+   OR LOWER(p.Body) LIKE '%security-engineering%'\
+   OR LOWER(p.Body) LIKE '%secure-coding%'\
+   OR LOWER(p.Body) LIKE '%secure-software-development%'\
+   OR LOWER(p.Body) LIKE '%cryptography%'\
+   OR LOWER(p.Body) LIKE '%identity-management%'\
+   OR LOWER(p.Body) LIKE '%access-control%'\
+   OR LOWER(p.Body) LIKE '%biometrics%'\
+   OR LOWER(p.Body) LIKE '%iot-security%'\
+   OR LOWER(p.Body) LIKE '%cloud-security%'\
+   OR LOWER(p.Body) LIKE '%mobile-security%'\
+   OR LOWER(p.Body) LIKE '%cybersecurity-framework%'\
+   OR LOWER(p.Body) LIKE '%incident-management%'\
+   OR LOWER(p.Body) LIKE '%threat-intelligence%'\
+   OR LOWER(p.Body) LIKE '%threat-hunting%'\
+   OR LOWER(p.Body) LIKE '%security-training%'\
+   OR LOWER(p.Body) LIKE '%broken access control%'\
+   OR LOWER(p.Body) LIKE '%insecure authentication%'\
+   OR LOWER(p.Body) LIKE '%sensitive data exposure%'\
+   OR LOWER(p.Body) LIKE '%XML external entity%'\
+   OR LOWER(p.Body) LIKE '%broken authentication%'\
+   OR LOWER(p.Body) LIKE '%security misconfiguration%'\
+   OR LOWER(p.Body) LIKE '%cross-site scripting%'\
+   OR LOWER(p.Body) LIKE '%insecure deserialization%'\
+   OR LOWER(p.Body) LIKE '%using components with known vulnerabilities%'\
+   OR LOWER(p.Body) LIKE '%insufficient logging and monitoring%'\
+   OR LOWER(p.Body) LIKE '%access control%'\
+   OR LOWER(p.Body) LIKE '%authentication bypass%'\
+   OR LOWER(p.Body) LIKE '%credential stuffing%'\
+   OR LOWER(p.Body) LIKE '%security headers%'\
+   OR LOWER(p.Body) LIKE '%session fixation%'\
+   OR LOWER(p.Body) LIKE '%data validation%'\
+   OR LOWER(p.Body) LIKE '%parameter tampering%'\
+   OR LOWER(p.Body) LIKE '%man-in-the-middle attack%'\
+   OR LOWER(p.Body) LIKE '%cross-site request forgery%'\
+   OR LOWER(p.Body) LIKE '%broken access controls%'\
+   OR LOWER(p.Body) LIKE '%session hijacking%'\
+   OR LOWER(p.Body) LIKE '%security misconfigurations%'\
+   OR LOWER(p.Body) LIKE '%clickjacking%'\
+   OR LOWER(p.Body) LIKE '%insufficient authentication%'\
+   OR LOWER(p.Body) LIKE '%cross-site scripting (XSS)%'\
+   OR LOWER(p.Body) LIKE '%broken object-level authorization%'\
+   OR LOWER(p.Body) LIKE '%insufficient cryptography%'\
+   OR LOWER(p.Body) LIKE '%injection%'\
+   OR LOWER(p.Body) LIKE '%injection flaws%'\
+   OR LOWER(p.Body) LIKE '%security miscon%'\
+   OR LOWER(p.Body) LIKE '%security risk%'\
+   OR LOWER(p.Body) LIKE '%security hole%'\
+   OR LOWER(p.Body) LIKE '%security breach%'\
+   OR LOWER(p.Body) LIKE '%security issue%'\
+   OR LOWER(p.Body) LIKE '%security vulnerability%'\
+   OR LOWER(p.Body) LIKE '%security threat%'\
+   OR LOWER(p.Body) LIKE '%security exploit%'\
+   OR LOWER(p.Body) LIKE '%security flaw%'\
+   OR LOWER(p.Body) LIKE '%security weakness%'\
+   OR LOWER(p.Body) LIKE '%security problem%'\
+   OR LOWER(p.Body) LIKE '%security concern%'\
+   OR LOWER(p.Body) LIKE '%security attack%'\
+   OR LOWER(p.Body) LIKE '%security incident%'\
+   OR LOWER(p.Body) LIKE '%security risk%'\
+   OR LOWER(p.Body) LIKE '%security hole%'\
+   OR LOWER(p.Body) LIKE '%security breach%'\
+   OR LOWER(p.Body) LIKE '%security issue%'\
+   OR LOWER(p.Body) LIKE '%security vulnerability%'\
+   OR LOWER(p.Body) LIKE '%security threat%'\
+   OR LOWER(p.Body) LIKE '%security exploit%'\
+   OR LOWER(p.Body) LIKE '%security flaw%'\
+   OR LOWER(p.Body) LIKE '%security weakness%'\
+   OR LOWER(p.Body) LIKE '%security problem%'\
+   OR LOWER(p.Body) LIKE '%security concern%'\
+   OR LOWER(p.Body) LIKE '%security attack%'\
+   OR LOWER(p.Body) LIKE '%security incident%'\
+   OR LOWER(p.Body) LIKE '%security flaw%'\
+   OR LOWER(p.Body) LIKE '%security gap%'\
+   OR LOWER(p.Body) LIKE '%security issue%'\
+   OR LOWER(p.Body) LIKE '%security loophole%'\
+   OR LOWER(p.Body) LIKE '%security risk%'\
+   OR LOWER(p.Body) LIKE '%security threat%'\
+   OR LOWER(p.Body) LIKE '%security vulnerability%'\
+   OR LOWER(p.Body) LIKE '%security breach%'\
+   OR LOWER(p.Body) LIKE '%security attack%'\
+   OR LOWER(p.Body) LIKE '%security exploit%'\
+   OR LOWER(p.Body) LIKE '%security concern%'\
+   OR LOWER(p.Body) LIKE '%security problem%'\
+   OR LOWER(p.Body) LIKE '%security incident%'\
+   OR LOWER(p.Body) LIKE '%authorization bypass%'\
+   OR LOWER(p.Body) LIKE '%information leakage%'\
+   OR LOWER(p.Body) LIKE '%broken session management%'\
+   OR LOWER(p.Body) LIKE '%cryptographic weaknesses%'\
+   OR LOWER(p.Body) LIKE '%broken authentication and session management%'\
+   OR LOWER(p.Body) LIKE '%excessive data exposure%'\
+   OR LOWER(p.Body) LIKE '%insecure direct object references%'\
+   OR LOWER(p.Body) LIKE '%injection attack%'\
+   OR LOWER(p.Body) LIKE '%insecure indirect object references%'\
+   OR LOWER(p.Body) LIKE '%insufficient transport layer protection%'\
+   OR LOWER(p.Body) LIKE '%invalidated redirects and forwards%'\
+   OR LOWER(p.Body) LIKE '%lack of encryption%'\
+   OR LOWER(p.Body) LIKE '%lack of intrusion detection and prevention%'\
+   OR LOWER(p.Body) LIKE '%lack of robustness%'\
+   OR LOWER(p.Body) LIKE '%lack of security controls%'\
+   OR LOWER(p.Body) LIKE '%lack of secure communication%'\
+   OR LOWER(p.Body) LIKE '%lack of security awareness%'\
+   OR LOWER(p.Body) LIKE '%lack of security measures%'\
+   OR LOWER(p.Body) LIKE '%lack of security policies%'\
+   OR LOWER(p.Body) LIKE '%lack of security practices%'\
+   OR LOWER(p.Body) LIKE '%lack of security procedures%'\
+   OR LOWER(p.Body) LIKE '%lack of security protocols%'\
+   OR LOWER(p.Body) LIKE '%security%'\
+   OR LOWER(p.Body) LIKE '%file access control%'\
+   OR LOWER(p.Body) LIKE '%insecure direct object references%'\
+   OR LOWER(p.Body) LIKE '%insecure indirect object references%'\
+   OR LOWER(p.Body) LIKE '%broken authentication%'\
+   OR LOWER(p.Body) LIKE '%weak authentication%'\
+   OR LOWER(p.Body) LIKE '%broken session management%'\
+   OR LOWER(p.Body) LIKE '%insecure session management%'\
+   OR LOWER(p.Body) LIKE '%insufficient session expiration%'\
+   OR LOWER(p.Body) LIKE '%session fixation%'\
+   OR LOWER(p.Body) LIKE '%cookie manipulation%'\
+   OR LOWER(p.Body) LIKE '%insecure cookie%'\
+   OR LOWER(p.Body) LIKE '%session hijacking%'\
+   OR LOWER(p.Body) LIKE '%credential theft%'\
+   OR LOWER(p.Body) LIKE '%credential leakage%'\
+   OR LOWER(p.Body) LIKE '%password sniffing%'\
+   OR LOWER(p.Body) LIKE '%brute force attack%'\
+   OR LOWER(p.Body) LIKE '%dictionary attack%'\
+   OR LOWER(p.Body) LIKE '%rainbow table%'\
+   OR LOWER(p.Body) LIKE '%man-in-the-middle attack%'\
+   OR LOWER(p.Body) LIKE '%mitm%'\
+   OR LOWER(p.Body) LIKE '%eavesdropping%'\
+   OR LOWER(p.Body) LIKE '%data interception%'\
+   OR LOWER(p.Body) LIKE '%data tampering%'\
+   OR LOWER(p.Body) LIKE '%data interception and tampering%'\
+   OR LOWER(p.Body) LIKE '%data exfiltration%'\
+   OR LOWER(p.Body) LIKE '%data leakage%'\
+   OR LOWER(p.Body) LIKE '%data theft%'\
+   OR LOWER(p.Body) LIKE '%data breach%'\
+   OR LOWER(p.Body) LIKE '%data snooping%'\
+   OR LOWER(p.Body) LIKE '%plaintext storage%'\
+   OR LOWER(p.Body) LIKE '%unencrypted storage%'\
+   OR LOWER(p.Body) LIKE '%clear text storage%'\
+   OR LOWER(p.Body) LIKE '%sensitive data exposure%'\
+   OR LOWER(p.Body) LIKE '%pii exposure%'\
+   OR LOWER(p.Body) LIKE '%confidential data exposure%'\
+   OR LOWER(p.Body) LIKE '%privacy violation%'\
+   OR LOWER(p.Body) LIKE '%data privacy%'\
+   OR LOWER(p.Body) LIKE '%data protection%'\
+   OR LOWER(p.Body) LIKE '%data security%'\
+   OR LOWER(p.Body) LIKE '%encryption%'\
+   OR LOWER(p.Body) LIKE '%cryptography%'\
+   OR LOWER(p.Body) LIKE '%secure communication%'\
+   OR LOWER(p.Body) LIKE '%secure transmission%'\
+   OR LOWER(p.Body) LIKE '%secure storage%'\
+   OR LOWER(p.Body) LIKE '%secure session%'\
+   OR LOWER(p.Body) LIKE '%secure connection%'\
+   OR LOWER(p.Body) LIKE '%end-to-end encryption%'\
+   OR LOWER(p.Body) LIKE '%symmetric encryption%'\
+   OR LOWER(p.Body) LIKE '%asymmetric encryption%'\
+   OR LOWER(p.Body) LIKE '%public key encryption%'\
+   OR LOWER(p.Body) LIKE '%private key encryption%'\
+   OR LOWER(p.Body) LIKE '%digital signature%'\
+   OR LOWER(p.Body) LIKE '%message authentication code%'\
+   OR LOWER(p.Body) LIKE '%hashing%'\
+   OR LOWER(p.Body) LIKE '%salting%'\
+   OR LOWER(p.Body) LIKE '%key management%'\
+   OR LOWER(p.Body) LIKE '%certificate management%'\
+   OR LOWER(p.Body) LIKE '%ssl%'\
+   OR LOWER(p.Body) LIKE '%tls%'\
+   OR LOWER(p.Body) LIKE '%https%'\
+   OR LOWER(p.Body) LIKE '%secure socket layer%'\
+   OR LOWER(p.Body) LIKE '%transport layer security%'\
+   OR LOWER(p.Body) LIKE '%secure coding%'\
+   OR LOWER(p.Body) LIKE '%secure development%'\
+   OR LOWER(p.Body) LIKE '%security by design%'\
+   OR LOWER(p.Body) LIKE '%least privilege%'\
+   OR LOWER(p.Body) LIKE '%separation of duties%'\
+   OR LOWER(p.Body) LIKE '%defense in depth%'\
+   OR LOWER(p.Body) LIKE '%fail secure%'\
+   OR LOWER(p.Body) LIKE '%fail safe%'\
+   OR LOWER(p.Body) LIKE '%principle of least privilege%'\
+   OR LOWER(p.Body) LIKE '%principle of least authority%'\
+   OR LOWER(p.Body) LIKE '%principle of least access%'\
+   OR LOWER(p.Body) LIKE '%principle of minimal privilege%'\
+   OR LOWER(p.Body) LIKE '%principle of minimal authority%'\
+   OR LOWER(p.Body) LIKE '%principle of minimal access%'\
+   OR LOWER(p.Body) LIKE '%security policy%'\
+   OR LOWER(p.Body) LIKE '%security guideline%'\
+   OR LOWER(p.Body) LIKE '%security standard%'\
+   OR LOWER(p.Body) LIKE '%security best practice%'\
+   OR LOWER(p.Body) LIKE '%security control%'\
+   OR LOWER(p.Body) LIKE '%security measure%'\
+   OR LOWER(p.Body) LIKE '%security procedure%'\
+   OR LOWER(p.Body) LIKE '%security practice%'\
+   OR LOWER(p.Body) LIKE '%security mechanism%'\
+   OR LOWER(p.Body) LIKE '%security solution%'\
+   OR LOWER(p.Body) LIKE '%threat modeling%'\
+   OR LOWER(p.Body) LIKE '%risk assessment%'\
+   OR LOWER(p.Body) LIKE '%vulnerability assessment%'\
+   OR LOWER(p.Body) LIKE '%penetration testing%'\
+   OR LOWER(p.Body) LIKE '%security audit%'\
+   OR LOWER(p.Body) LIKE '%security review%'\
+   OR LOWER(p.Body) LIKE '%security assessment%'\
+   OR LOWER(p.Body) LIKE '%incident response%'\
+   OR LOWER(p.Body) LIKE '%security incident response%'\
+   OR LOWER(p.Body) LIKE '%security breach response%'\
+   OR LOWER(p.Body) LIKE '%security event response%'\
+   OR LOWER(p.Body) LIKE '%incident handling%'\
+   OR LOWER(p.Body) LIKE '%cybersecurity incident response%'\
+   OR LOWER(p.Body) LIKE '%data breach response%'\
+   OR LOWER(p.Body) LIKE '%data security incident response%'\
+   OR LOWER(p.Body) LIKE '%security incident management%'\
+   OR LOWER(p.Body) LIKE '%incident recovery%'\
+   OR LOWER(p.Body) LIKE '%forensic investigation%'\
+   OR LOWER(p.Body) LIKE '%root cause analysis%'\
+)\
+   AND p.CreationDate >= '2017-09-21'\
+   AND p.CreationDate <= '2021-09-21'}
